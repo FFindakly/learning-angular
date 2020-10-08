@@ -31,17 +31,17 @@ export class ContentsList {
   // Get a content item at a given index
   getContentItem(index: number) {
     if (index <= this._contentItems.length - 1) {
-      //return this._contentItems[index];
       return `<article>
                 <h1>${this._contentItems[index].title}</h1>
-                <p>Author: ${this._contentItems[index].author}</p>
-                <img src=${this._contentItems[index].imageUrl} width="500" height="300" />
+                <p class="author">Author: ${this._contentItems[index].author} || <span><small>Article type: ${this._contentItems[index].type}</small></span></p>
+                <img src=${this._contentItems[index].imageUrl} width="500" height="350" />
                 <p>${this._contentItems[index].body}</p>
+                <small>Tags: ${this._contentItems[index].tags}</small>
              </article>`;
     } else {
-      return `<article>
-                <h1>${this._contentItems[index].title}</h1>
-             </article>`;
+      return `<div>
+                <h1>This item does not exist</h1>
+             </div>`;
     }
   }
 }
