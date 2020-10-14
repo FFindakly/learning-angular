@@ -1,3 +1,4 @@
+import { getLocaleEraNames } from '@angular/common';
 import { Content } from './content-interface';
 
 /*
