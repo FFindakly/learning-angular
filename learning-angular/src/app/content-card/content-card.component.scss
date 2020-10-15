@@ -34,3 +34,7 @@ small {
   font-style: italic;
   color: lightslategray;
 }
+
+:host.last-item {
+  border: 2px solid black;
+}
