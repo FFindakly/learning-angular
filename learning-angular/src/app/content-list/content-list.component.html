@@ -1,1 +1,7 @@
-<p>content-list works!</p>
+<!-- 
+    * Add an app-content-card that loops through contentItemsArray of the content-list class
+    *  
+-->
+<app-content-card *ngFor="let item of contentItemsArray" [cardContent]="item">
+    {{ item }}
+</app-content-card>
