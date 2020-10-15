@@ -16,4 +16,10 @@ export class ContentCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // Show in the console the id value of the clicked image
+  imageIsClicked() {
+    console.log(`The image of post #${this.cardContent.id} is clicked`);
+  }
+
 }

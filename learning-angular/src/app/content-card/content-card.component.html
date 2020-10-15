@@ -4,7 +4,8 @@
   <small>Article type: {{ cardContent.type }}</small>
   <div class="row">
     <p class="body-p">{{ cardContent.body }}</p>
-    <img src="{{ cardContent.imageUrl }}"/>
+    <!-- Add onClick event to the image element -->
+    <img src="{{ cardContent.imageUrl }}" (click)="imageIsClicked()"/> 
   </div>
   <small>Tags: {{ cardContent.tags }}</small>
 </div>
