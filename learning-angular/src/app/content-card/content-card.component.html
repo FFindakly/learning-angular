@@ -1,23 +1,7 @@
-<style>
-  article {
-    background-color: gainsboro;
-    padding: 20px;
-    margin: 20px 0;
-  }
-
-  div {
-    margin: 0 auto;
-    width: 80%;
-    height: 100px;
-    background-color: gold;
-  }
-</style>
-
-<!-- Call the getContentItem function -->
-<article [innerHtml]="contentsList.getContentItem(0)"></article>
-<article [innerHtml]="contentsList.getContentItem(1)"></article>
-<article [innerHtml]="contentsList.getContentItem(2)"></article>
-
-<!-- Get a content item that is out of the array length -->
-<article [innerHtml]="contentsList.getContentItem(4)"></article>
-
+<div>
+  <h1>{{ contentItem.title }}</h1>
+  <p>Author: {{ contentItem.author }} || <span><small>Article type: {{ contentItem.type }}</small></span></p>
+  <img src="{{ conetentItem.imageUrl }}" width="500" height="350" />
+  <p>{{ contentItem.body }}</p>
+  <small>Tags: {{ contentItem.tags }}</small>
+</div>
