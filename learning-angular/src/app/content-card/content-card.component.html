@@ -1,7 +1,10 @@
-<div>
+<div class="card">
   <h1>{{ cardContent.title }}</h1>
-  <p>Author: {{ cardContent.author }} || <span><small>Article type: {{ cardContent.type }}</small></span></p>
-  <img src="{{ cardContent.imageUrl }}" width="500" height="350" />
-  <p>{{ cardContent.body }}</p>
+  <p>Author: {{ cardContent.author }}</p>
+  <small>Article type: {{ cardContent.type }}</small>
+  <div class="row">
+    <p class="body-p">{{ cardContent.body }}</p>
+    <img src="{{ cardContent.imageUrl }}"/>
+  </div>
   <small>Tags: {{ cardContent.tags }}</small>
 </div>
