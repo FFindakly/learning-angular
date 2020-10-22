@@ -2,6 +2,6 @@
     * Add an app-content-card that loops through contentItemsArray of the content-list class
     *  
 -->
-<app-content-card *ngFor="let item of contentItemsArray; last as isLast" [cardContent]="item" [class.last-item]="isLast">
+<app-content-card *ngFor="let item of (contentItemsArray | filterContent: 'Nature'); last as isLast" [cardContent]="item" [class.last-item]="isLast">
     {{ item }}
 </app-content-card>
