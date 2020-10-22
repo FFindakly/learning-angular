@@ -1,13 +1,12 @@
 <div>
-  <div class="card">
-    <h1>{{ cardContent.title }}</h1>
-    <p>Author: {{ cardContent.author }}</p>
-    <small>Article type: {{ cardContent.type }}</small>
-    <div class="row">
-      <p class="body-p">{{ cardContent.body }}</p>
-      <!-- Add onClick event to the image element -->
-      <img src="{{ cardContent.imageUrl }}" (click)="imageIsClicked()"/> 
-    </div>
-    <small>Tags: {{ cardContent.tags }}</small>
+  <h1>{{ cardContent.title }}</h1>
+  <p>Author: {{ cardContent.author }}</p>
+  <small>Article type: {{ cardContent.type }}</small>
+  <div class="row">
+    <p class="body-p">{{ cardContent.body }}</p>
+    <!-- Add onClick event to the image element -->
+    <img src="{{ cardContent.imageUrl }}" (click)="imageIsClicked()"/> 
   </div>
+  <small>Tags: {{ cardContent.tags }}</small>
 </div>
+
